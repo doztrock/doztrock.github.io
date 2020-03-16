@@ -1,14 +1,9 @@
 ---
+title: Inicio
 layout: index
 published: true
 ---
 
-# Titulo
+## Bienvenido al curso de Electiva II
 
-## Bienvenido al curso de electiva
-
-### Titulo
-
-#### Texto
-
-Texto
+En este curso aprenderemos sobre la creacion de videojuegos
