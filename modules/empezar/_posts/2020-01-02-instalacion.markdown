@@ -5,4 +5,4 @@
 Para empezar con la instalacion:
 
 Nos dirigimos a la [seccion de descargas](https://processing.org/download/) de la [pagina oficial de Processing](https://processing.org/) y alli elegimos la version que se adapte al sistema operativo de nuestro ordenador.
-![01.png](https://cursoelectiva.s3.amazonaws.com/image/empezar/instalacion/01.png)
+![01.png](https://cdn.cursoelectiva.me/image/empezar/instalacion/01.png)
