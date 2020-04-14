@@ -1,0 +1,94 @@
+## ARREGLOS
+
+Un método que permite almacenar y manipular gran cantidad de datos en un programa son los arreglos. Un arreglo es una lista de datos de cualquier tipo. Vamos a ver como se usan, y lo haremos despacito para que no duela.
+
+Hasta ahora, para declarar e iniciar una serie de variables haciamos esto:
+
+```java
+/* Creamos una serie de variables de tipo String */
+String nombre01 = "Pablo";
+String nombre02 = "María";
+String nombre03 = "José";
+String nombre04 = "Pepa";
+```
+
+Vamos a escribir un programa para mostrar una de esas variables aleatoriamente:
+
+```java
+/* Esta variable tiene valores 0, 1, 2 o 3 */
+int n = int(random(4));
+
+/* Según el valor de "n", se varian los textos en pantalla */
+if (n == 0) {
+    text(nombre00, 30, 45);
+}
+
+if (n == 1) {
+    text(nombre01, 30, 45);
+}
+
+if (n == 2) {
+    text(nombre02, 30, 45);
+}
+
+if (n == 3) {
+    text(nombre03, 30, 45);
+}
+```
+
+Usando arreglos, esto mismo quedaría así:
+
+```java
+/* Creamos un arreglo de tipo "String" y les asignamos valores */
+String[] nombres = {"Pablo", "María", "José", "Pepa"};
+
+/* Esta variable tiene valores 0, 1, 2 o 3 */
+int n = int(random(4));
+
+/* Muestra en pantalla el contenido del elemento respectivo */
+text(nombres[n], 30, 45);
+```
+
+Como se ve, para declarar un arreglo se usa esta estructura:
+
+```java
+tipo_de_dato[] nombre_del_arreglo = {valor1, valor2,..., valorN};
+```
+
+Veamos cómo llenar un arreglo con números aleatorios.
+
+```java
+/* Creamos un arreglo de tipo "float" con 100 elementos */
+float[] x = new float[100];
+int n = 0;
+
+void setup() {
+    
+    /* Cargamos el arreglo con numeros aleatorios entre 0 y el ancho de la ventana */
+    int i = 0;
+    while (i < 100) {
+        x[i] = random(0, width);
+        i++;
+    }
+
+    noStroke();
+    frameRate(1);
+    background(50);
+    
+    return;
+}
+
+void draw() {
+
+    background(50);
+    ellipse(x[n], 70, 10, 10);
+    text(x[n], 30, 45);
+
+    n++;
+
+    if (n > 99) {
+        n = 0;
+    }
+
+}
+```
